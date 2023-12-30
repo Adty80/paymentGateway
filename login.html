@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>dcs</title>
+      <link rel="stylesheet" href="login.css">
+      
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-black  ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fst-italic" class="fw-bolder fs-6 " href="http://127.0.0.1:5500/landing.html#">THESPICENET</a>
+    
+            
+            </div>
+          </div>
+         
+            </nav>
+            <!-- login Form -->
+            <form action="http://127.0.0.1:5500/Addtocart.html#"  onsubmit="return val()" class="shadow-sm w-50 mx-auto rounded-4">
+<div class="container ">
+<div class="row ">
+<div class="col-12 mt-5 text-center">
+  <h1 class="text-warning">Welcome</h1>
+<input type="text" name="Username" placeholder="Username" id="name" class="form-control-plaintext w-50 d-block mx-auto mt-5 text-white"  >
+<p id="mess" class="text-danger"></p>
+<input type="password" name="Password" placeholder="Password" id="pass" class="form-control-plaintext w-50 d-block mx-auto mt-5 text-white"  >
+<p id="mess2" class="text-danger"></p>
+
+<!-- forget password and remember me  -->
+<div class="d-flex justify-content-evenly mt-5  mx-5">
+  <div class="mb-3 form-check mx-2">
+      <input type="checkbox" class="form-check-input" id="rememberMe" onclick="fun()" name="rememberMe">
+      <label class="form-check-label " style="color:#f2aa06" for="rememberMe">Remember Me</label>
+  </div>
+  <div >
+      <a  class="text-decoration-none" style="color: #f2aa06;">Forgot Password?</a>
+  </div>
+</div>
+
+<button type="submit" style="background-color: #f2aa06;" class="rounded-2 w-50 mt-5 text-dark fw-semibold">Submit</button>
+<a href="http://127.0.0.1:5500/Register.html" class="text-decoration-none text-warning"><p class="text-primary text-center text-warning " > Don't Have an Account ? Register</p>
+</a>
+
+
+
+</div>
+
+</div>
+
+</div>
+</form>
+
+
+
+
+
+
+
+            
+<script src="login.js"></script>
+</body>
+</html>

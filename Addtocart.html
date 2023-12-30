@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>dcs</title>
+  <link rel="stylesheet" href="addtocart.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://kit.fontawesome.com/1dd8f7daa0.js" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ 
+    </head>
+  <body style="background-image: url(turkish-delights-raisins-wooden-plate-marble-surface.jpg);background-size: cover;">
+
+
+    <div class="text-center mt-3">
+      
+<span class="mx-auto  fs-4 text-uppercase">Order Summary</span>
+</div>
+  
+        <div class="container mx-auto mt-3" >
+          <!-- <i class="fa-solid fa-backward  fa-sm mt-5" style="color: #000000;">&nbsp;Back</i> -->
+          
+          <div class="row border shadow-lg bg-white w-100 pt-2 pb-2">
+            <div class="col-8 scroller" style="overflow-y: scroll;height:450px;">
+              <div class="col-lg-12 col-md-10 col-sm-12 ">
+                
+           <div class="card card2 w-100  mb-3 mt-3 mx-auto" style="max-height: 180px;">
+            <div class="card-body">
+              <button type="button" class="btn-close float-end" aria-label="Close" onclick="hideCard2()"></button>
+              <h5 class="card-title" id="name2" class="pi">Pizza</h5>
+              <span class="card-text " id="des2" >Veg Crispy Panner Pizza with Extra Cheese 
+                +100 ml Coke </span>
+                <div class="row">
+                  <div class="col-lg-9 col-md-8 col-sm-12 ">
+                    Price : Rs <span class="text-danger fw-semibold " id="price2" value="220"> 220</span>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <ul class="pagination pagination-sm">
+                    <li class="page-item  " aria-current="page">
+                      <span class="page-link" onclick="min2()">-</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#" id="bone" value="1">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#" onclick="add2()">+</a></li>
+                  </ul>
+                </div></div>
+              
+           
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 card -->
+          <div class="col-lg-12 col-md-10 col-sm-12">
+            <div class="card  w-100  mb-3 mt-3 mx-auto" style="max-height: 180px;">
+              <div class="card-body">
+                <button type="button" class="btn-close float-end" aria-label="Close" onclick="hideCard()"></button>
+                <h5 class="card-title" id="name1">Burger Combo</h5>
+              <span class="card-text " id="des1">Chicken Burger with mayonnaise 
+                 </span>
+                <div class="row">
+                  <div class="col-lg-9 col-md-8 col-sm-12 ">
+                    Price :Rs <span class="text-danger fw-semibold " id="price1">  120</span>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <ul class="pagination pagination-sm">
+                      <li class="page-item  " aria-current="page">
+                      <span class="page-link" onclick="min1()">-</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#" id="aone">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#" onclick="add1()">+</a></li>
+                  </ul>
+                </div></div>
+                
+                
+              </div>
+            </div>
+        </div>
+        <!--3 card-->
+        <div class="col-lg-12 col-md-10 col-sm-12">
+          <div class="card coo w-100  mb-3 mt-3 mx-auto" style="max-height: 180px;">
+            <div class="card-body">
+              <button type="button" class="btn-close float-end " aria-label="Close" onclick="hide()"></button>
+              <h5 class="card-title" id="name">Masala Dosa</h5>
+              <span class="card-text " id="des" >Plain masala dosa
+                </span>
+                <div class="row">
+                  <div class="col-lg-9 col-md-8 col-sm-12 ">
+                    Price : Rs <span class="text-danger fw-semibold " id="price"> 80</span>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <ul class="pagination pagination-sm">
+                      <li class="page-item  " aria-current="page">
+                      <span class="page-link" onclick="min()">-</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" id="lone">1</a></li>
+                    <li class="page-item"><a class="page-link"  onclick="add()">+</a></li>
+                  </ul>
+                </div></div>
+                
+           
+              </div>
+          </div>
+          </div>
+          
+          
+
+
+          
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 shadow-lg mx-auto">
+        <div class="card w-100   mb-3 mt-3 border-0  ">
+          <div class="card-body ">
+            <p class="text-dark text-center" > Order details</p>
+            <p class="text-dark" id="show1"> Name :</p>
+            <p class="text-dark" id="show2">Quantity :  </p>
+            <p class="text-dark" id="show3">Price :  </p>
+            <p class="text-dark" id="show4">Description : </p>
+            <p class="text-dark" id="show4">Total Price : </p>
+           <a href="http://127.0.0.1:5500/payment.html" class="text-decoration-none text-dark"><div class="d-flex"> <button type="button" class="btn btn-warning mx-auto d-block mb-5 mt-5" onclick="fun()">Checkout</button></a>
+            <button type="button" class="btn btn-dark mx-auto d-block mb-5 mt-5" onclick="fun()">Cancel</button>
+          </div>
+          </div>
+        </div> 
+      </div>
+      
+      
+      
+      
+      
+      
+    </div><!--  row end  -->
+    
+    
+    
+  </div>
+  
+  <!-- <button type="button" class="btn btn-warning mx-auto d-block mb-5 mt-5" onclick="fun()">To Pay</button> -->
+  
+  
+  
+</div>
+
+
+
+
+
+<!--footer -->
+
+
+
+
+
+
+
+
+
+
+<div class="footer mt-5" id="footer">
+<div class="container-fluid ">
+  <div class="row bg-black mt-5 text-white">
+ 
+      <h3 class="mt-5 text-warning" id="spicenet">THE SPICENET</h3>
+ 
+ <div class="col-lg-2 col-md-2 col-sm-12 mt-2">
+ <span id="abt">About spicenet</span>
+ </div>
+ <div class="col-lg-2 col-md-2 col-sm-12 mt-2 ">
+ <span id="fd">food Services</span>
+ </div>
+ <div class="col-lg-2 col-md-2 col-sm-12 mt-2">
+ <span id="cs">Customer Services</span>
+ </div>
+ <div class="col-lg-4 col-md-4 col-sm-12 mt-1">
+     <p id="text" class="text-warning">Get the Updates First by becoming a member</p>
+ 
+ <input id="Email" type="Email" name="Email" placeholder="Email" id="name" class=" form-control w-100  mx-auto text-dark"  >
+ </div>
+ <div class="col-lg-2 col-md-2 col-sm-12 mt-5 mb-3">
+     <button id="btn" type="button" class="btn btn-light btn-sm">Subscribe</button>
+ </div>
+ 
+ <hr class="mt-5" style="color: aliceblue;">
+ 
+ 
+ <div class="col-lg-2 col-md-2 col-sm-12 mt-2" id="tc">
+     <span> Terms and Conditions </span>
+     </div>
+ <div id="pp" class="col-lg-2 col-md-2 col-sm-12 mt-2">
+     <span>  Privacy policy</span>
+     </div>
+ <div id="all" class="col-lg-2 col-md-2 col-sm-12 mt-2">
+     <span> <i class="fa-regular fa-copyright fa-lg" style="color: #ffffff;"></i> 2024 All Right Reserved  </span>
+     </div>
+ <div class="col-lg-6 col-md-2 col-sm-12 mt-2  ">
+     <div class="col-lg-6 col-md-6 col-sm-12 float-lg-end  mb-5">
+     <i class="fa-brands fa-instagram fa-lg " style="color: #ffb803;" id="insta"></i>
+     <i class="fa-brands fa-x-twitter fa-lg" style="color:  #ffb803;" id="twitter"></i>
+     <i class="fa-brands fa-linkedin fa-lg" style="color:  #ffb803" id="lin"></i>
+     <i class="fa-brands fa-facebook fa-lg" style="color:  #ffb803;" id="fb"></i>
+     <i class="fa-regular fa-envelope fa-lg" style="color: #ffb803;" id="em"></i>
+ </div>
+ </div>
+ 
+ 
+ 
+ 
+ <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+ <h6 class="text-center neon-text" id="axiom" style="background:linear-gradient();">Developed By Axiom TechGuru Pvt. Ltd.</h6>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  </div>
+ 
+ 
+   </div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="addtocart.js"></script>
+
+
+</body>
+    </html>

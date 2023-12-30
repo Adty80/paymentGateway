@@ -1,0 +1,29 @@
+body{font-family: arial, "Helvetica Neue", sans-serif
+};
+
+
+.pagination ul{
+
+    cursor: pointer;
+}
+
+.neon-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    font-weight: l;
+    color: #fff;
+    text-shadow: 0 0 10px #ff64e5, 0 0 20px #dd00ff, 0 0 30px #ff9d9d;
+    animation: neon-glow 1s  linear infinite;
+    animation-delay: 2s;
+  }
+
+  @keyframes neon-glow {
+    0%, 100% {
+      text-shadow: 0 0 10px #d97aff, 0 0 20px #2b00ff, 0 0 30px #44fff3;
+    }
+    10% {
+      text-shadow: 0 0 20px #ffffff, 0 0 10px #ff008c, 0 0 40px #ff61e5;
+    }
+  
+  }
+  

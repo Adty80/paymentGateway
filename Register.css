@@ -1,0 +1,31 @@
+body{
+
+    background-image: url(freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+::-webkit-input-placeholder{
+
+    color:#f2aa06 ;
+}
+
+input:hover{
+box-shadow: 1px 1px 1px 1px #ffffff;
+border: none;
+
+}
+
+form{
+
+border:1px dotted #000000;
+background: #000000c5 ;
+
+}
+
+form:hover{
+
+    border:1px dotted #ffffff;
+}
+
